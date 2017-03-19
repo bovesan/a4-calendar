@@ -1,0 +1,51 @@
+body {
+    width: 297mm;
+    height: 210mm;
+	font-family: "PT Serif Caption";
+	box-shadow: 3mm 3mm 10mm rgba(0,0,0,0.2);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  	transform: translateY(-50%) translateX(-50%);
+}
+h2 {
+	text-align: center;
+}
+h3 {
+	margin: 0;
+}
+.elisabeth {
+	background: #92278f;
+	color: white;
+}
+.bove {
+	background: #00aeef;
+	color: white;
+}
+.bove.elisabeth {
+	background: #00ae4d;
+}
+.col-xs-2>div {
+	padding: 0.4em;
+	border-radius: 4px;
+	margin: 0.4em 0;
+}
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+@media print {
+  body {
+	box-shadow: none;
+  }
+  html {
+    width: 297mm;
+    height: 210mm;
+  }
+ }
+.container {
+	width: 99%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
